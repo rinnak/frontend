@@ -1,183 +1,188 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-@font-face {
-    font-family: 'Syncopate';
-    src: url('./Syncopate/Syncopate-Regular.woff2') format('woff2'),
-        url('./Syncopate/Syncopate-Regular.woff') format('woff');
-    font-weight: 400;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'Syncopate';
-    src: url('./Syncopate/Syncopate-Bold.woff2') format('woff2'),
-         url('./Syncopate/Syncopate-Bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Syncopate";
+  src: url("./Syncopate/Syncopate-Regular.woff2") format("woff2"),
+    url("./Syncopate/Syncopate-Regular.woff") format("woff");
+  font-weight: 400;
 }
 
-.header{
-    background: white;
-    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.25);
-    top: 0;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 20px 0;
-    display: flex;
-    position: relative;
+@font-face {
+  font-family: "Syncopate";
+  src: url("./Syncopate/Syncopate-Bold.woff2") format("woff2"),
+    url("./Syncopate/Syncopate-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
-.nav{
-    width: 80%;
-}
-.nav-list{
-    display: flex;
-    justify-content: center;
-    list-style: none;
 
+.header {
+  background: white;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.25);
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  display: flex;
+  position: relative;
 }
-.nav-list a{
-    font-family: "Syncopate", sans-serif;
-    font-weight: 700;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    color: #b5468e;
-    padding: 10px 15px;
-    border: 1px solid transparent;
-    border-radius: 10px;
+.nav {
+  width: 80%;
 }
-.nav-list a:hover{
-    background-color: #dcdcdc;
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
-.nav-list a:active{
-    background-color: #ababab;
+.nav-list a {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #b5468e;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.nav-list a:hover {
+  background-color: #dcdcdc;
+}
+.nav-list a:active {
+  background-color: #ababab;
 }
 body {
-    background-color: #ffeff6;
-    color: #181818;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    font-variant: normal;
-    font-weight: 400 !important;
-}   
+  background-color: #ffeff6;
+  color: #181818;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-variant: normal;
+  font-weight: 400 !important;
+}
 
 strong {
-    color: #29001a;
-    font-weight: 700;
+  color: #29001a;
+  font-weight: 700;
 }
 
-.main{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+.main {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h1, h2, h3 {
-    font-family: "Syncopate";
-    font-weight: 700;
-    line-height: 99%;
-    letter-spacing: 0%;
+h1,
+h2,
+h3 {
+  font-family: "Syncopate";
+  font-weight: 700;
+  line-height: 99%;
+  letter-spacing: 0%;
 }
 
-#resume{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
+#resume {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
-section{
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.25);
-    padding: 20px;
-    margin-bottom: 30px;
-    
+section {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
-a{
-    text-decoration: none;
-    color: #181818;
-    cursor: pointer;
+a {
+  text-decoration: none;
+  color: #181818;
+  cursor: pointer;
 }
 
-#name{
-    line-height: 1;
-    margin-bottom: 10px;
+#name {
+  line-height: 1;
+  margin-bottom: 10px;
 }
 
-#home{
-   line-height: 1.1; 
+#home {
+  line-height: 1.1;
 }
 
 hr {
-    color: #b45292;
-    margin-bottom: 10px;
+  color: #b45292;
+  margin-bottom: 10px;
 }
 
-h3{
-    font-size: 24px;
-    font-variant: small-caps; 
+h3 {
+  font-size: 24px;
+  font-variant: small-caps;
 }
 
-#skills{
-    flex-direction: column;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+#skills {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
-table{
-    border-radius: 10px;
-    background-color: #f0e2ea;
-    padding: 10px;
-    border-collapse: collapse;
-    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+table {
+  border-radius: 10px;
+  background-color: #f0e2ea;
+  padding: 20px;
+  border-collapse: collapse;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-tbody td{
-    padding: 5px 5px;
-    text-align: center;
+tbody td {
+  padding: 5px 5px;
+  text-align: center;
+}
+thead th {
+  padding: 5px 10px;
+  text-align: center;
 }
 
-tbody tr:not(:last-child){
-    border-bottom: 0.5px solid #b45292;
+tbody tr:not(:last-child) {
+  border-bottom: 0.5px solid #b45292;
 }
 
 #Education h3,
 #Experience h3,
-#links h3{
-    flex-direction: column;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
+#links h3 {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
 }
-#Education{
-    line-height: 1.5;
-}
-
-#Education > p + p { /* Добавлено */
-    margin-top: 8px; /* Добавлено */
-    padding-left: 15px; /* Добавлено */
-    border-left: 2px solid #ff7eb9; /* Добавлено */
+#Education {
+  line-height: 1.5;
 }
 
-#obr{
-    margin-bottom: 10px;
+#Education > p + p {
+  /* Добавлено */
+  margin-top: 8px; /* Добавлено */
+  padding-left: 15px; /* Добавлено */
+  border-left: 2px solid #ff7eb9; /* Добавлено */
 }
 
-#Experience ul, ol{
-    padding-left: 25px;
+#obr {
+  margin-bottom: 10px;
 }
-#Experience img{
-    margin: 20px auto;
-    display: block;
-    width: 300px;
+
+#Experience ul,
+ol {
+  padding-left: 25px;
+}
+#Experience img {
+  margin: 20px auto;
+  display: block;
+  width: 300px;
 }
