@@ -1,0 +1,141 @@
+@media (min-width: 850px) and (max-width: 1080px) {
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  .hero h2 {
+    font-size: 1em;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 20px;
+  }
+
+  .grid-item {
+    border-radius: 10px;
+    height: 470px;
+  }
+
+  .grid-item img {
+    height: 340px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .grid-item:hover {
+    transform: translateY(-7px);
+  }
+
+  .container-content {
+    flex-direction: column;
+  }
+  .container-content img {
+    width: 75%;
+    height: auto;
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 850px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+  .hero-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .hero-info p {
+    max-width: 65vw;
+  }
+  .hero-btns {
+    flex-direction: row;
+    max-width: 65vw;
+    justify-content: center;
+  }
+
+  .container-content {
+    flex-direction: row;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 20px;
+  }
+
+  .grid-item {
+    border-radius: 10px;
+    height: 470px;
+  }
+
+  .grid-item img {
+    height: 340px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .grid-item:hover {
+    transform: translateY(-7px);
+  }
+
+  .container-content {
+    flex-direction: column;
+  }
+  .container-content img {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    row-gap: 10px;
+    column-gap: 20px;
+  }
+  .burger-menu {
+    display: block;
+    position: fixed;
+    cursor: pointer;
+  }
+  .burger-icon {
+    display: block;
+  }
+  .nav-list {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1d1d1d;
+
+    z-index: 999;
+    padding: 46px 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+  }
+  .burger-checkbox:checked ~ .nav .nav-list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .burger-checkbox:checked ~ .burger-menu .burger-icon {
+    display: none;
+  }
+  .burger-checkbox:checked ~ .burger-menu .close-icon {
+    display: block;
+  }
+}
