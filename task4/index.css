@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #0a0a0a, #705074);
+}
+
+.calculator {
+  width: 375px;
+  height: 530px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.display {
+  position: relative;
+  margin: 30px 0 40px;
+}
+
+.display input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 35px;
+  color: white;
+  text-align: right;
+  pointer-events: none;
+}
+
+.display .display-input::placeholder {
+  color: white;
+}
+
+.display.active .display-input {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-65%);
+  transition: 0.5s;
+}
+
+.display.active .display-result {
+  font-size: 35px;
+  transform: translateY(0);
+  transition: 0.5s;
+}
+
+.display .display-result {
+  position: absolute;
+  left: 0;
+  font-size: 15px;
+  transform: translateY(65%);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.buttons button {
+  padding: 15px;
+  background: transparent;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  box-shadow: -3px -3px 15px rgba(255, 255, 255, 0.1),
+    3px 3px 15px rgba(0, 0, 0, 0.6);
+}
+
+.buttons .operator {
+  position: relative;
+  color: rgb(255, 82, 232);
+}
+
+.buttons .operator span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+
+.buttons .operator.backspace span {
+  display: flex;
+  align-items: center;
+  width: 22px;
+  height: 20px;
+  border: 2px solid rgb(255, 82, 232);
+  border-left-color: transparent;
+  transform: translate(-35%, -50%) scale(0.9);
+}
+
+.buttons .operator.backspace span::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid rgb(255, 82, 232);
+  border-bottom: 2px solid rgb(255, 82, 232);
+  transform: rotate(45deg);
+  left: -8px;
+}
+
+.buttons .operator.backspace span::after {
+  content: "x";
+  position: absolute;
+  font-size: 15px;
+  top: -2px;
+  left: 4px;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.history {
+  width: 350px;
+  padding: 25px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  color: white;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 82, 232, 0.3);
+}
+
+.clear-history {
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.history-item {
+  cursor: pointer;
+}
